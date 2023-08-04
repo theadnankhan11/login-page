@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: #f2f2f2;
+}
+
+.wrapper{
+    width: 380px;
+    background: #fff;
+    border: 15px;
+    box-shadow: 0px 15px 20px rgba(0.5,0.5,0.5,0.5);
+}
+.wrapper .title{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 15px;
+    background: linear-gradient(-135deg ,#c850c0,#4158d0,#4158d0 );
+}
+.wrapper form{
+    padding: 10px 30px 50px 30px;
+}
+
+.wrapper form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+.wrapper form .field input{
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid lightgray;
+
+}
+.wrapper form .field input:focus{
+    border-color: #4158d0;
+}
+
+.wrapper form .field label{
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translate(-50%);
+    pointer-events: none;
+    transition:  all 0.3s ease;
+
+}
+
+.wrapper form .field input:focus ~label{
+    top: 0%;
+    color: #4158d0;
+    font-size: 16px;
+    background: #fff;
+    transform: translate(-50%);
+
+}
